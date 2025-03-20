@@ -27,21 +27,16 @@ const Menu = () => {
                                 <Link className="nav-link dropdown-toggle" to="/project2" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">Project 2</Link>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown2">
                                     <li>
-                                        <Link className="dropdown-item" to="/project2/task1">Task 1</Link>
+                                        <Link className="dropdown-item" to="/project2/">Antras Darbas</Link>
                                     </li>
-                                    <li>
-                                        <Link className="dropdown-item" to="/project2/task2">Task 2</Link>
-                                    </li>
-                                    <li>
-                                        <Link className="dropdown-item" to="/project2/task3">Task 3</Link>
-                                    </li>
+                                   
                                 </ul>
                             </li>
                             <li className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle" to="/project3" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">Project 3</Link>
                                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown3">
                                     <li>
-                                        <Link className="dropdown-item" to="/project3/task1">Task 1</Link>
+                                        <Link className="dropdown-item" to="/project3/task1">Project2</Link>
                                     </li>
                                     <li>
                                         <Link className="dropdown-item" to="/project3/task2">Task 2</Link>
