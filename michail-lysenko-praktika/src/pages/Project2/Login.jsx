@@ -9,19 +9,19 @@ const Login = () => {
   const navigate = useNavigate();
   const [error, setError] = useState("");
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-
-    if (login(email, password)) {
+    const success = await login(email, password);
+    if (success) {
       navigate("/project2/dashboard");
     } else {
-      setError("Invalid login credentials");
+      setError("Wrong email or password");
     }
   };
 
   return (
     <div className="container">
-      <h2>Login</h2>
+      <h2>Login  (test@test.lt)</h2>
       {error && <p style={{ color: "red" }}>{error}</p>}
       <form onSubmit={handleLogin}>
         <input type="text" placeholder="Login" value={email} onChange={(e) => setEmail(e.target.value)} required />
