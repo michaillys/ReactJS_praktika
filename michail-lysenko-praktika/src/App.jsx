@@ -19,9 +19,7 @@ import ProtectedRoute from "./pages/Project2/ProtectedRoute";
 import PublicRoute from "./pages/Project2/PublicRoute";
 
 // Pages - Project 3
-import Task31 from "./pages/Project3/Task31";
-import Task32 from "./pages/Project3/Task32";
-import Task33 from "./pages/Project3/Task33";
+import UserSearchPage from "./pages/Project3/UserSearchPage";
 
 // Context
 import AuthProvider from "./AuthContext";
@@ -86,9 +84,7 @@ const App = () => {
             />
 
             {/* Project 3 */}
-            <Route path="/project3/task1" element={<Task31 />} />
-            <Route path="/project3/task2" element={<Task32 />} />
-            <Route path="/project3/task3" element={<Task33 />} />
+            <Route path="/project3/usersearch" element={<UserSearchPage />} />
           </Routes>
         </main>
       </Router>
